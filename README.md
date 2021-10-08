@@ -1,5 +1,5 @@
 # core_nlp
-(Core)[https://core.ac.uk/] api로 수집한 논문 데이터에 NLP를 적용.
+[Core](https://core.ac.uk/) api로 수집한 논문 데이터에 NLP를 적용.
 이를 통해 현재 가지고 있는 reference paper와 유사한 paper 들을 clustering 한 문헌의 리스트를 연구자에게 제안 가능
 
 ## 1. dielectric.ipynb
