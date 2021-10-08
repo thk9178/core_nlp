@@ -1,5 +1,6 @@
 # core_nlp
-core api로 수집한 논문의 자연어처리
+(Core)[https://core.ac.uk/] api로 수집한 논문 데이터에 NLP를 적용.
+이를 통해 현재 가지고 있는 reference paper와 유사한 paper 들을 clustering 한 문헌의 리스트를 연구자에게 제안 가능
 
 ## 1. dielectric.ipynb
 - core api v2 를 이용하여 논문을 수집
@@ -11,12 +12,12 @@ core api로 수집한 논문의 자연어처리
 - json format 으로 된 데이터를 pandas dataframe으로 변경
 
 ## 3. nlp_utils.py
-- 개선 필요 : 함수 안에서 stopword를 따로따로 설정하는 것이 현재 문제 (stopword 추가 시 대응이 되지 않음)
 - DocuVec : Document vector (paragraph vector) 를 embedding 하는 학습을 위한 함수
 - DocuSim : 생성된 모델에 새로운 데이터를 적용하는 함수
+- 개선 예정: 사용자 정의 stopword 추가
 
 ## 4. papers
-- reference 논문 데이터를 적용하여 현재 데이터 세트 내에서 비슷한 문헌을 찾을 때 이용할 txt 파일
+- Reference 논문 데이터를 적용하여 현재 데이터 세트 내에서 비슷한 문헌을 찾을 때 이용할 txt 파일
 
 ## 5. app.49978.pdf
 - 초기에는 pdf를 pypdf2 를 이용하여 text 추출하려고 했으나, 띄어쓰기 되어있지 않은 채 추출되어 임시로 txt 파일을 이용하게 되었음
